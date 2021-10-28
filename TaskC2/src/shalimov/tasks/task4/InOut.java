@@ -1,9 +1,9 @@
-package shalimov.tasks.task3;
+package shalimov.tasks.task4;
 
 
 public class InOut {
 
-public static double[] getArray(String line){
+static double[] getArray(String line){
     int i=0;
     for(String retval : line.split(" ")){
         i++;
@@ -21,7 +21,7 @@ static void printArray(double[] arr){
             System.out.println(String.format("%.3f",value));
         }
 }
-    public static void printArray(double[] array, String name, int columnCount) {
+    static void printArray(double[] array, String name, int columnCount) {
         for (int i = 0; i < array.length; i++) {
             System.out.printf("%s[% -3d]=%-10.4f ", name, i, array[i]);
             if ((i + 1) % columnCount == 0 || i == array.length - 1) {
